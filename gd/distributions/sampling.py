@@ -6,6 +6,14 @@ from scipy.stats import norm
 from scipy.stats import uniform
 import seaborn as sns
 
+def sample(args=('normal', 0.5, 0.1, 0, 1)):
+    dist = args[0]
+    args = list(args[1:]) + [1] # 1 sample
+    if dist == 'normal':
+        return sample_normal(*args)[0]
+    elif dist == 'uniform':
+        return sample_uniform(*args)[0]
+
 def sample_normal(mean, std, min_value=0, max_value=1, nr_samples=100):
     data = norm.rvs(size=nr_samples, loc=mean, scale=std)
     data = [x if x>=min_value else min_value for x in data]

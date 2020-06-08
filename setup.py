@@ -1,12 +1,10 @@
 from setuptools import setup, find_packages
 
-# TODO: replace the first four fields and 'ptt' by the name of the root folder
-
 setup(
-    name='pytorch_template',
-    version='0.1',
-    description='A Pytorch project template',
-    url='https://github.com/camgbus/pytorch_template',
+    name='geometric_data',
+    version='0.2',
+    description='A project that deals mainly with geometric dummy data',
+    url='https://github.com/camgbus/geometric_data',
     keywords='python setuptools',
-    packages=find_packages(include=['ptt', 'ptt.*']),
+    packages=find_packages(include=['gd', 'gd.*']),
 )
