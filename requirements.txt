@@ -1,5 +1,5 @@
 -e .
-numpy==1.18.3
+numpy==1.22.0
 scipy==1.4.1
 Pillow==7.0.0
 seaborn==0.10.1
